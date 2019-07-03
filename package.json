@@ -1,0 +1,34 @@
+{
+  "name": "ts-project-skeleton",
+  "version": "1.0.0",
+  "description": "Base setup for projects on TypeScript",
+  "main": "dist/index.js",
+  "author": "Oleg Shikov <ol.shikov@yandex.ru>",
+  "repository": {
+    "type": "git",
+    "url": "git+https://gihub.com/idoleg/ts-project-skeleton.git"
+  },
+  "bugs": {
+    "url": "https://github.com/idoleg/ts-project-skeletonissues"
+  },
+  "homepage": "https://github.com/idoleg/ts-project-skeleton#README",
+  "license": "MIT",
+  "scripts": {
+    "build": "tsc",
+    "dev": "ts-node src/index.ts",
+    "start": "node dist/index.js",
+    "lint": "tslint -p tsconfig.json --format stylish --force",
+    "fix": "tslint -p tsconfig.json --fix --format stylish --force",
+    "test": "mocha --reporter spec"
+  },
+  "devDependencies": {
+    "@types/chai": "^4.1.7",
+    "@types/mocha": "^5.2.7",
+    "@types/node": "^12.0.10",
+    "chai": "^4.2.0",
+    "mocha": "^6.1.4",
+    "ts-node": "^8.3.0",
+    "tslint": "^5.18.0",
+    "typescript": "^3.5.2"
+  }
+}
