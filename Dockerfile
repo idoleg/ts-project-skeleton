@@ -5,4 +5,4 @@ WORKDIR /app
 RUN npm i && npm run build
 
 EXPOSE 8124
-CMD node ./dist/bin/server.js
+CMD node ./dist/index.js
